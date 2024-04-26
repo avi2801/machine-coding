@@ -1,0 +1,12 @@
+.mainContainer {
+  display: "flex";
+  width: 100vw;
+  font-size: 1.5rem;
+  height: 100vh;
+}
+
+.inputClass {
+  width: 600px;
+  padding: 12px;
+  border: 2px solid blue;
+}
