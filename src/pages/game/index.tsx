@@ -1,5 +1,5 @@
 import React from "react";
-import TicTacToeGame from "../components/tic-tac-toe/TicTacToeGame";
+import TicTacToeGame from "../../components/tic-tac-toe/TicTacToeGame";
 
 const Game = () => {
   return (
