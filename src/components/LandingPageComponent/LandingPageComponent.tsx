@@ -6,15 +6,15 @@ const LandingPageComponent = () => {
   const cardsArray = [
     {
       name: "Play Game",
-      route: "/game",
+      route: "/machine-coding/game",
     },
     {
       name: "Counter",
-      route: "/counter",
+      route: "/machine-coding/counter",
     },
     {
       name: "Context Basic",
-      route: "/contextbasic",
+      route: "/machine-coding/contextbasic",
     },
   ];
 
