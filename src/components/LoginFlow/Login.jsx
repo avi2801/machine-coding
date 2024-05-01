@@ -1,4 +1,4 @@
-import AppStore from "../../../context/UserContext";
+import AppStore from "../../context/UserContext";
 import React, { useContext, useState } from "react";
 
 const Login = () => {
