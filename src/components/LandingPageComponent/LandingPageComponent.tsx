@@ -7,21 +7,39 @@ const LandingPageComponent = () => {
   const cardsArray = [
     {
       name: "Play Game",
-      route: typeof window!=='undefined' && window && checkIfLocal(window.location.hostname)
-        ? "/game"
-        : "/machine-coding/game",
+      route:
+        typeof window !== "undefined" &&
+        window &&
+        checkIfLocal(window.location.hostname)
+          ? "/game"
+          : "/machine-coding/game",
     },
     {
       name: "Counter",
-      route: typeof window!=='undefined' && window && checkIfLocal(window.location.hostname)
-        ? "/counter"
-        : "/machine-coding/counter",
+      route:
+        typeof window !== "undefined" &&
+        window &&
+        checkIfLocal(window.location.hostname)
+          ? "/counter"
+          : "/machine-coding/counter",
     },
     {
       name: "Context Basic",
-      route: typeof window!=='undefined' && window && checkIfLocal(window.location.hostname)
-        ? "/contextbasic"
-        : "/machine-coding/contextbasic",
+      route:
+        typeof window !== "undefined" &&
+        window &&
+        checkIfLocal(window.location.hostname)
+          ? "/contextbasic"
+          : "/machine-coding/contextbasic",
+    },
+    {
+      name: "Rating Component",
+      route:
+        typeof window !== "undefined" &&
+        window &&
+        checkIfLocal(window.location.hostname)
+          ? "/rating"
+          : "/machine-coding/rating",
     },
   ];
 
