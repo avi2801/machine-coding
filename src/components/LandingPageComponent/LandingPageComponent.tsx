@@ -1,20 +1,27 @@
 import React from "react";
 import Cards from "./Cards";
 import styles from "./Cards.module.css";
+import { checkIfLocal } from "../../utility/checkIfLocal";
 
 const LandingPageComponent = () => {
   const cardsArray = [
     {
       name: "Play Game",
-      route: "/machine-coding/game",
+      route: typeof window!=='undefined' && window && checkIfLocal(window.location.hostname)
+        ? "/game"
+        : "/machine-coding/game",
     },
     {
       name: "Counter",
-      route: "/machine-coding/counter",
+      route: typeof window!=='undefined' && window && checkIfLocal(window.location.hostname)
+        ? "/counter"
+        : "/machine-coding/counter",
     },
     {
       name: "Context Basic",
-      route: "/machine-coding/contextbasic",
+      route: typeof window!=='undefined' && window && checkIfLocal(window.location.hostname)
+        ? "/contextbasic"
+        : "/machine-coding/contextbasic",
     },
   ];
 
