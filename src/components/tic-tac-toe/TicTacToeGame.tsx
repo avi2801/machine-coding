@@ -57,9 +57,10 @@ const TicTacToeGame = () => {
 
   return (
     <div className={mainContainer}>
+      <h1>Player X starts the game</h1>
       {winner?.length ? (
         <>
-          {winner}
+          <span className={styles.spanClass}>{winner}</span>
           <button className={styles.buttonClass} onClick={restartClickHandler}>
             Restart
           </button>

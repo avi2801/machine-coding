@@ -1,0 +1,28 @@
+.mainCardClass {
+  border: 1px solid rgb(231, 209, 209);
+  min-width: 300px;
+  min-height: 300px;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #1a2a6c;
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv {
+  display: flex;
+  min-width: 1500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
