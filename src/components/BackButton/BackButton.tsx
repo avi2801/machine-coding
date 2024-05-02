@@ -5,10 +5,10 @@ import styles from '../../pages/counter/style.module.css'
 const BackButton = () => {
    
     const goToHomeHandler = () => {
-       window.location.href = checkIfLocal(window.location.hostname)?'/':'/machine-coding'
+       window.location.href ='/machine-coding'
       };
   return (
-    <button className={styles.counterButtons} onClick={goToHomeHandler} style={{width:'100px'}}>Home</button>
+    <button className={styles.counterButtons} onClick={goToHomeHandler} style={{width:'100px',borderRadius:'6px'}}>Home</button>
   )
 }
 
