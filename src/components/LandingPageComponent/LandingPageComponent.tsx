@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Cards from "./Cards";
 import styles from "./Cards.module.css";
-import { checkIfLocal } from "../../utility/checkIfLocal";
+import Modal from "@/pages/modalPopup";
 
 const LandingPageComponent = () => {
+  const [showModalPopUp, setModalPopUp] = useState<boolean>(false);
   const cardsArray = [
     {
       name: "Play Game",
@@ -21,10 +22,17 @@ const LandingPageComponent = () => {
       name: "Rating Component",
       route: "machine-coding/rating",
     },
+    {
+      name:"Drop Down Component",
+      route:'machine-coding/dropDown'
+    }
   ];
 
   const handleClick = (index: number) => {
     window.location.href = `${cardsArray[index]?.route}`;
+  };
+  const modalPopUpCallback = () => {
+    setModalPopUp(false);
   };
 
   return (
@@ -44,6 +52,13 @@ const LandingPageComponent = () => {
             );
           })}
       </div>
+      <button style={{ cursor: "pointer" }} onClick={() => setModalPopUp(true)}>
+        Show Modal PopUp
+      </button>
+      <Modal
+        showModalPopUp={showModalPopUp}
+        modalPopUpCallback={modalPopUpCallback}
+      />
     </div>
   );
 };
