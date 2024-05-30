@@ -25,6 +25,10 @@ const LandingPageComponent = () => {
     {
       name:"Drop Down Component",
       route:'machine-coding/dropDown'
+    },
+    {
+      name:"Progress Component",
+      route:'machine-coding/progressBar'
     }
   ];
 

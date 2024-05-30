@@ -1,0 +1,11 @@
+.mainGameClass{
+    display: flex;
+    gap:16px;
+    
+    border:1px solid white;
+}
+.buttonClass{
+    
+    padding:6px 8px;
+
+}
