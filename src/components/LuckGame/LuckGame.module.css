@@ -1,0 +1,92 @@
+.gameContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  min-width: 320px;
+  min-height: 500px;
+  margin: 20px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.commonClass {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.game_child_container1 {
+  padding: 12px 16px;
+  border: 1px solid white;
+  align-items:center;
+  justify-content: space-between;
+}
+.game_child_container2 {
+  padding: 12px 16px;
+  border: 1px solid white;
+  justify-content: space-between;
+
+}
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.registerMainClass {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.labelClass {
+  font-size: larger;
+}
+.inputClass {
+  width: 200px;
+  padding: 8px 10px;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+ 
+}
+.buttonClass {
+  padding: 8px 10px;
+  width: 80px;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(49, 198, 12);
+  color:white;
+  cursor: pointer;
+}
+.disabledClass{
+    background-color: rgb(23, 99, 4);
+}
+.startGameButton {
+    width:100px;
+    background-color: rgb(13, 72, 191);
+}
+.generateToken {
+  background-color:rgb(163, 3, 199);
+  color:rgb(234, 222, 222);
+  width:200px;
+}
+.paraClass{
+    border:1px solid black;
+    box-shadow: rgb(255, 255, 255, 0.5) 0px 20px 30px -10px;
+    width:200px;
+    text-align: left;
+    background-color: white;
+    color:black;
+    border-radius: 8px;
+    padding:8px 10px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.tokenSpan{
+  border:1px solid white;
+  height:60px;
+  width:60px;
+  color:white;
+  border-radius: 50%;
+  background-color: black;
+}

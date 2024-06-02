@@ -29,6 +29,10 @@ const LandingPageComponent = () => {
     {
       name:"Progress Component",
       route:'machine-coding/progressBar'
+    },
+    {
+      name:'Play the Game',
+      route:'machine-coding/luckGame'
     }
   ];
 
